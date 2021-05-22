@@ -1,6 +1,6 @@
 package br.com.impacta.lab;
 
-import br.com.impacta.models.*;
+import br.com.impacta.models.Produto;
 
 public class JavaSpringTemplateApplication {
 
@@ -37,9 +37,9 @@ public class JavaSpringTemplateApplication {
 		 */
 		
 		Produto produto = new Produto();
-		produto.codigo = 1;
-		produto.descricao = "Camisa";
-		produto.valor = 70.00;
+		produto.setCodigo(1);
+		produto.setDescricao("Camisa");
+		produto.setValor(70.00);
 		
 		String resumo = produto.montarResumo(produto);
 		

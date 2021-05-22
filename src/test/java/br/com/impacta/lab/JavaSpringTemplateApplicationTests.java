@@ -11,9 +11,9 @@ public class JavaSpringTemplateApplicationTests {
 	public void shouldMontarResumoWithNewProdutoCodigo1() {
 		
 		Produto produto = new Produto();
-		produto.codigo = 1;
-		produto.descricao = "Camisa";
-		produto.valor = 70.00;
+		produto.setCodigo(1);
+		produto.setDescricao("Camisa");
+		produto.setValor(70.00);
 		
 		String resumo = produto.montarResumo(produto);
 		
@@ -25,9 +25,9 @@ public class JavaSpringTemplateApplicationTests {
 	public void shouldMontarResumoWithNewProdutoCodigo15() {
 		
 		Produto produto = new Produto();
-		produto.codigo = 15;
-		produto.descricao = "Tenis";
-		produto.valor = 200.00;
+		produto.setCodigo(15);
+		produto.setDescricao("Tenis");
+		produto.setValor(200.0);
 		
 		String resumo = produto.montarResumo(produto);
 		
